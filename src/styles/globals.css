@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html, 
+html,
 body {
   margin: 0;
   padding: 0;
@@ -101,4 +101,14 @@ html.has-scroll-dragging {
 [data-scroll-direction='horizontal'] .c-scrollbar_thumb {
   right: auto;
   bottom: 0;
+}
+
+/* text-stroke */
+.text-stroke {
+  -webkit-text-stroke: 2px #cdcbcb;
+  -webkit-text-fill-color: transparent;
+}
+.text-stroke-sm {
+  -webkit-text-stroke: 1px #cdcbcb;
+  -webkit-text-fill-color: transparent;
 }

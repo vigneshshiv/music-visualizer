@@ -2,9 +2,11 @@
  * Application Home Page
  */
 import dynamic from 'next/dynamic';
+import cn from 'classnames';
 // Application
 import Container from 'components/Container';
 import { H1 } from '../components/Heading';
+import RobotoSlabFont from './config/RobotoFont';
 
 const Circle = dynamic(() => import('../components/circle/Circle'), {
   ssr: false
@@ -22,7 +24,8 @@ const Home = (): JSX.Element => {
         <div className='p-2'/>
       </div> 
       */}
-      <div className='flex min-h-screen items-center place-content-center uppercase text-7xl sm:text-9xl font-bold'>
+      <div className={cn('flex min-h-screen items-center place-content-center uppercase text-7xl sm:text-9xl font-bold', 
+            RobotoSlabFont.className)}>
         <span className='text-stroke'>Lets</span>
         <span className='text-indigo-400 dark:text-green-400'>Talk</span>
       </div>
