@@ -13,7 +13,12 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dark: '#0b0b0b',
+        lite: '#f7f7f7'
+      }
+    },
   },
   plugins: [],
 }
