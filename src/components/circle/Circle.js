@@ -2,10 +2,9 @@
  * Circle Code Art
  */
 import * as React from 'react';
-import * as p5 from 'p5';
+import './p5sound_fix';
 import 'p5/lib/addons/p5.sound';
-
-window.p5 = p5;
+import * as p5 from 'p5';
 
 class Circle extends React.Component {
   constructor() {
@@ -126,7 +125,7 @@ class Circle extends React.Component {
   render() {
     return (
       <div className='flex flex-wrap lg:flex-nowrap mt-8 w-full justify-center items-center'>
-        <div className='flex justify-center cursor-pointer' ref={_circle_ref_} />
+        <div className='flex justify-center cursor-pointer' ref={this.myRef} />
         <div className='flex w-full font-bold flex-wrap max-w-sm lg:w-1/2 mb-4 lg:mx-6 lg:justify-start'>
           <p className='w-full text-lg md:text-md lg:text-lg font-bold p-4'>
             This is a{' '}
