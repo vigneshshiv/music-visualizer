@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Music Visualizer
 
-## Getting Started
+Simple Music Visualizer built with [TS Particles](https://particles.js.org/) and [Next.js 13](https://nextjs.org/).
 
-First, run the development server:
+## Preview
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+| Technology | Description | Link ↘️ |
+|------------|------------------------|-------------|
+| Next.js 13 | The React Framework | https://nextjs.org/ |
+| Tailwind CSS | Utility-first CSS Framework | https://tailwindcss.com/ |
+| TS Particles | Animated Particles for Background | https://particles.js.org/ |
+| p5 Code Art | JS library for creative code art | https://p5js.org/ |
+| Framer Motion | Motion library for animation | https://www.framer.com/motion/ |
+| Locomotive Scroll | Smooth scrolling library | https://github.com/locomotivemtl/locomotive-scroll |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Installation
 
-## Learn More
+1. [Fork](https://github.com/vigneshshiv/music-visualizer/fork) the project. Click on the fork icon in the top right to get started.
 
-To learn more about Next.js, take a look at the following resources:
+2. Clone the project, you can use the following command:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/<your-github-username>/music-visualizer
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Navigate to the project directory
 
-## Deploy on Vercel
+   ```bash
+   cd music-visualizer
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Install dependencies with `yarn install` or `npm install` in both client and server folder
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   yarn install
+   or
+   npm install
+   ```
+
+5. Run the development server:
+
+   ```bash
+   yarn dev
+   or
+   npm run dev
+   ```
+
+## Contributing
+
+- Contributions make the open source community such an amazing place to learn, inspire, and create.
+- Any contributions you make are greatly appreciated.
+
+## License
+
+No LICENSE.
