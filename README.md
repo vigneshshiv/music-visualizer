@@ -4,7 +4,7 @@ Simple Music Visualizer built with [TS Particles](https://particles.js.org/) and
 
 ## Preview
 
-
+![image](https://github.com/vigneshshiv/music-visualizer/blob/main/public/images/preview.png)
 
 ## Tech Stack
 
