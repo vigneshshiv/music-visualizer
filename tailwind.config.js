@@ -12,13 +12,6 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}'
   ],
-  theme: {
-    extend: {
-      colors: {
-        dark: '#0b0b0b',
-        lite: '#f7f7f7'
-      }
-    },
-  },
+  theme: {},
   plugins: [],
 }

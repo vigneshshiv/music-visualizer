@@ -12,7 +12,7 @@ class Circle extends React.Component {
     this.myRef = React.createRef();
   }
 
-  Sketch = (p) => {
+  Sketch = p => {
     let amp,
       bg,
       canvas,
@@ -99,15 +99,6 @@ class Circle extends React.Component {
     };
   };
 
-  // const [myP5, setMyP5] = React.useState(null);
-
-  // React.useEffect(() => {
-  //   setMyP5(new p5(Sketch, _circle_ref_.current));
-  //   return () => {
-  //     setMyP5(null);
-  //   };
-  // }, [myP5]);
-
   // React things to make p5.js work properly and not lag when leaving the current page below
   componentDidMount() {
     this.myP5 = new p5(this.Sketch, this.myRef.current);
@@ -126,43 +117,32 @@ class Circle extends React.Component {
     return (
       <div className='flex flex-wrap lg:flex-nowrap mt-8 w-full justify-center items-center'>
         <div className='flex justify-center cursor-pointer' ref={this.myRef} />
-        <div className='flex w-full font-bold flex-wrap max-w-sm lg:w-1/2 mb-4 lg:mx-6 lg:justify-start'>
-          <p className='w-full text-lg md:text-md lg:text-lg font-bold p-4'>
+        <div className='flex w-full font-bold flex-wrap max-w-sm lg:w-1/2 mb-4 lg:mx-6 lg:justify-start dark:text-gray-50'>
+          <div 
+            className='px-4 opacity-85'
+            style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)' }}
+          >
+            <div className='text-3xl lg:text-4xl text-gray tracking-wide bg-linear-gradient(to right, #f6d365 0%, #fda085 100%)'>
+              Hello Welcome! 👋
+            </div>
+          </div>
+          <p className='w-full mt-4 text-lg md:text-md lg:text-lg font-bold p-4'>
             This is a{' '}
-            <a
-              href='https://en.wikipedia.org/wiki/Vaporwave'
-              target='_blank'
-              rel='noreferrer'
-              className='duration-500'
-            >
+            <a href='https://en.wikipedia.org/wiki/Vaporwave' target='_blank' rel='noreferrer' className='duration-500'>
               <b>vaporwave-inspired</b>
             </a>{' '}
             music visualizer that I built with{' '}
-            <a
-              href='https://p5js.org/'
-              target='_blank'
-              rel='noreferrer'
-              className='duration-500'
-            >
+            <a href='https://p5js.org/' target='_blank' rel='noreferrer' className='duration-500'>
               p5.js
             </a>
             <br />
             <br />
             In case you're wondering, the{' '}
-            <a
-              href='https://www.youtube.com/watch?v=1-xGerv5FOk'
-              target='_blank'
-              rel='noreferrer'
-            >
+            <a href='https://www.youtube.com/watch?v=1-xGerv5FOk' target='_blank' rel='noreferrer'>
               song
             </a>{' '}
             is Alone from{' '}
-            <a
-              className='mb-2'
-              href='https://it.wikipedia.org/wiki/M%C3%98'
-              target='_blank'
-              rel='noreferrer'
-            >
+            <a className='mb-2' href='https://it.wikipedia.org/wiki/M%C3%98' target='_blank' rel='noreferrer'>
               Alan Walker
             </a>
             .
@@ -171,13 +151,13 @@ class Circle extends React.Component {
             <b>Click</b> on the image to <b>start/stop</b> the song.
             <br />
             <br />
-            Also, if you hit the <b>spacebar</b> the color of the geometrical
-            shape will change with a new vaporwave color!
+            Also, if you hit the <b>spacebar</b> the color of the geometrical shape will change with a new vaporwave
+            color!
           </p>
         </div>
       </div>
     );
   }
-};
+}
 
 export default Circle;

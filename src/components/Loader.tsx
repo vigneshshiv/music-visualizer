@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 const Loader = (): JSX.Element => {
   return (
-    <div className='fixed bg-dark grid place-content-center w-full h-screen top-0 left-0 text-center'>
+    <div className='fixed grid place-content-center w-full h-screen top-0 left-0 text-center'>
       <motion.div style={{ zIndex: 100 }} className='flex justify-center'>
         <motion.svg
           layoutId='loader'

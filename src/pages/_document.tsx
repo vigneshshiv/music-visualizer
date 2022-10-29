@@ -2,6 +2,7 @@
  * Document Head section holds title and meta tags
  */
 import { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 // Application
 import TitleAndMetaTags from 'components/TitleAndMetaTags';
 
@@ -15,6 +16,17 @@ const _Document = () => {
         <TitleAndMetaTags />
       </Head>
       <body className='dark:bg-gray-800'>
+        <Script
+          id='musically-theme'
+          strategy='beforeInteractive'
+          dangerouslySetInnerHTML={{
+            __html: `
+              JSON.parse(localStorage.getItem('darkMode'))
+                ? document.documentElement.classList.add('dark')
+                : document.documentElement.classList.remove('dark');
+              `,
+          }}
+        />
         <Main />
         <NextScript />
       </body>
